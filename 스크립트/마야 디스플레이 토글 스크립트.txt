@@ -1,0 +1,72 @@
+마야 2019.3 뷰포트 디스플레이 토글 커맨드(MEL)
+
+
+넙스커브 onoff(하단 스크립트 복사 후 핫키 에디터에서 생성)
+
+string $activePanel = `getPanel -wf`;
+if (`modelEditor -q -nurbsCurves $activePanel` == 1) {
+ modelEditor -e -nurbsCurves 0 $activePanel;
+} else {
+ modelEditor -e -nurbsCurves 1 $activePanel;
+}
+
+--------------------------------------
+
+카메라 onoff(하단 스크립트 복사 후 핫키 에디터에서 생성)
+
+string $activePanel = `getPanel -wf`;
+if (`modelEditor -q -cameras $activePanel` == 1) {
+ modelEditor -e -cameras 0 $activePanel;
+} else {
+ modelEditor -e -cameras 1 $activePanel;
+}
+
+--------------------------------------
+
+로케이터 onoff(하단 스크립트 복사 후 핫키 에디터에서 생성)
+
+string $activePanel = `getPanel -wf`;
+if (`modelEditor -q -locators $activePanel` == 1) {
+ modelEditor -e -locators 0 $activePanel;
+} else {
+ modelEditor -e -locators 1 $activePanel;
+}
+
+--------------------------------------
+
+이미지 플레인 onoff(하단 스크립트 복사 후 핫키 에디터에서 생성)'
+*가끔 단축키를 눌러도 안보이는 경우가 있는데, 이는 카메라가 숨겨져있거나 패널의 이미지 플레인 아이콘을 클릭 후 다시 실행하면 나옴
+
+string $activePanel = `getPanel -wf`;
+if (`modelEditor -q -type imagePlane $activePanel` == 1) {
+ modelEditor -e -type imagePlane 0 $activePanel;
+} else {
+ modelEditor -e -type imagePlane 1 $activePanel;
+}
+
+
+--------------------------------------
+
+그리즈펜슬 onoff(하단 스크립트 복사 후 핫키 에디터에서 생성)
+
+string $activePanel = `getPanel -wf`;
+if (`modelEditor -q -greasePencils $activePanel` == 1) {
+ modelEditor -e -greasePencils 0 $activePanel;
+} else {
+ modelEditor -e -greasePencils 1 $activePanel;
+}
+
+
+
+--------------------------------------
+
+
+매니퓰레이터 onoff(하단 스크립트 복사 후 핫키 에디터에서 생성)
+
+
+string $activePanel = `getPanel -wf`;
+if (`modelEditor -q -manipulators $activePanel` == 1) {
+ modelEditor -e -manipulators 0 $activePanel;
+} else {
+ modelEditor -e -manipulators 1 $activePanel;
+}
