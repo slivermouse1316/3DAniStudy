@@ -1,0 +1,10 @@
+1. 무게감이 다른 바운싱 볼 2개 만들기 (레퍼런스 영상 첨부 필)
+예시 : 
+https://www.youtube.com/watch?v=rrVHcE6FV3g
+
+2. 좌우로 움직이는 펜들럼 애니메이션 만들기
+예시 :
+https://www.youtube.com/watch?v=HKi0a15npEI
+
+
+1280*720, .mov 또는 .mp4로 프리뷰 뽑아 올려주세요.
