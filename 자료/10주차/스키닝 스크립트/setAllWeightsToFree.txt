@@ -1,0 +1,9 @@
+{
+// hold all weights
+string $pickedSkin[] = `ls -sl`;
+select -r `skinCluster -q -inf`;
+string $currentJoints[] = `ls -sl -typ joint`;
+for ($joint in $currentJoints)
+setAttr ($joint + ".liw") 0;
+select -r $pickedSkin[0];
+}

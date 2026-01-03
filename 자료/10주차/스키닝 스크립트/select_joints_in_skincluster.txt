@@ -1,0 +1,6 @@
+//# 1. Select the geo with the skinCluster that you want to get the joints for
+//# 2. Execute this (Bind this to a key or drag to a MEL shelf button)
+{
+$sel = `ls -sl`; 
+select -r `skinCluster -q -inf (findRelatedSkinCluster($sel[size($sel)-1]))`;
+}
